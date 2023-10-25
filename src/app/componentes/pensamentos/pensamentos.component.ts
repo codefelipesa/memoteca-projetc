@@ -9,8 +9,8 @@ export class PensamentosComponent {
 
   pensamento = {
     id: '1',
-    conteudo :'Aprendendo Angular',
-    autoria: 'Dev',
+    conteudo :'Eu Te Amo Meu Amor',
+    autoria: 'Namorado da Kakau',
     modelo : '' 
   }
   

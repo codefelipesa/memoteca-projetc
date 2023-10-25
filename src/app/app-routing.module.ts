@@ -2,6 +2,7 @@ import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pens
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PensamentosComponent } from './componentes/pensamentos/pensamentos.component';
+import { PensamentoCardComponent } from './componentes/pensamentos/pensamento-card/pensamento-card.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'listarPensamentos',
     component: ListarPensamentoComponent
+  },
+  {
+    path: 'pensamentos-mural',
+    component: PensamentoCardComponent
   }
 ];
 
