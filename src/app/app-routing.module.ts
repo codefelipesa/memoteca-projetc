@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PensamentosComponent } from './componentes/pensamentos/pensamentos.component';
 import { PensamentoCardComponent } from './componentes/pensamentos/pensamento-card/pensamento-card.component';
+import { DeletePensamentosComponent } from './componentes/pensamentos/delete-pensamentos/delete-pensamentos.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'pensamentos-mural',
     component: PensamentoCardComponent
+  },
+  {
+    path: 'pensamentos/excluirPensamento/:id',
+    component: DeletePensamentosComponent
   }
 ];
 
