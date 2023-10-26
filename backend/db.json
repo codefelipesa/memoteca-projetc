@@ -2,27 +2,33 @@
     "pensamentos": [
         {
             "id": 1,
-            "conteudo": "AAaaa zé da manga",
-            "autoria": "Felps",
-            "modelo": "modelo2"
+            "conteudo": "Voxeee é o neném mais lindo do mundo",
+            "autoria": "Namorado de Kakau",
+            "modelo": "modelo1"
         },
         {
             "id": 2,
-            "conteudo": "AAaaa zé da manga",
-            "autoria": "Felps",
+            "conteudo": "Eu amo voxe meu mozinho!!!!!!",
+            "autoria": "Namorado de Kakau",
             "modelo": "modelo2"
         },
         {
             "id": 3,
-            "conteudo": "AAaaa zé da manga",
-            "autoria": "Felps",
-            "modelo": "modelo2"
+            "conteudo": "Você é a maior gostosa do mundo, fico maluco de tesão perto de você",
+            "autoria": "Namorado de Kakau",
+            "modelo": "modelo3"
         },
         {
             "id": 4,
-            "conteudo": "AAaaa zé da manga",
-            "autoria": "Felps",
-            "modelo": "modelo2"
+            "conteudo": "Meu coração bate mais forte quando estou com você. Você é a mulher mais linda, inteligente e engraçada que eu já conheci.Eu te amo mais do que tudo na vida. Eu quero passar o resto dos meus dias ao seu lado, te fazendo feliz e te fazendo sorrir.Eu te amo para sempre.",
+            "autoria": "Namorado de Kakau",
+            "modelo": "modelo1"
+        },
+        {
+            "id": 5,
+            "conteudo": "Oooooh cê para, não é serio ",
+            "autoria": "Namorado de Kakau",
+            "modelo": "modelo3"
         }
     ]
 }

@@ -15,12 +15,6 @@ export class PensamentosComponent {
     modelo : '' 
   }
   
- 
-
-  
-  limpaForm(){
-
-  }
 
   criarPensamento(){}
 
