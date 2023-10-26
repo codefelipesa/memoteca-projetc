@@ -7,18 +7,6 @@
       "modelo": "modelo1"
     },
     {
-      "id": 2,
-      "conteudo": "Eu amo voxe meu mozinho!!!!!!",
-      "autoria": "Namorado de Kakau",
-      "modelo": "modelo2"
-    },
-    {
-      "id": 3,
-      "conteudo": "Você é a maior gostosa do mundo, fico maluco de tesão perto de você",
-      "autoria": "Namorado de Kakau",
-      "modelo": "modelo3"
-    },
-    {
       "id": 4,
       "conteudo": "Meu coração bate mais forte quando estou com você. Você é a mulher mais linda, inteligente e engraçada que eu já conheci.Eu te amo mais do que tudo na vida. Eu quero passar o resto dos meus dias ao seu lado, te fazendo feliz e te fazendo sorrir.Eu te amo para sempre.",
       "autoria": "Namorado de Kakau",
@@ -31,46 +19,10 @@
       "modelo": "modelo3"
     },
     {
-      "conteudo": "Aaaaaaaaa zé da manga",
-      "autoria": "FelipinDBR",
-      "modelo": "modelo1",
-      "id": 6
-    },
-    {
-      "conteudo": "Aaaaaaaaa zé das manga",
-      "autoria": "FelipinDBR",
-      "modelo": "modelo1",
-      "id": 7
-    },
-    {
-      "conteudo": "Aaaaaaaaa zé das manga",
-      "autoria": "FelipinDBR",
-      "modelo": "modelo1",
-      "id": 8
-    },
-    {
-      "conteudo": "Aaaaaaaaa zé da manga",
-      "autoria": "FelipinDBR",
-      "modelo": "modelo1",
-      "id": 9
-    },
-    {
-      "conteudo": "Apre",
-      "autoria": "FelipinDBR",
-      "modelo": "modelo2",
-      "id": 10
-    },
-    {
       "conteudo": "Voxe é meu mozinho",
       "autoria": "FelipinDBR",
       "modelo": "modelo3",
       "id": 11
-    },
-    {
-      "conteudo": "",
-      "autoria": "",
-      "modelo": "modelo1",
-      "id": 12
     }
   ]
 }

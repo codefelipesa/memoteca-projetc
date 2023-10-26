@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Pensamento } from '../interface-pensamento';
 import { ServicePensamentoService } from '../service-pensamento.service';
-import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-delete-pensamentos',
@@ -30,13 +30,13 @@ export class DeletePensamentosComponent implements OnInit  {
 
   excluirPensamento(){
     this.service.excluir(this.pensamento.id!).subscribe(()=>{
-      this.router.navigate(['/listarPensamento'])
+      this.router.navigate(['/listarPensamentos'])
     })
 
     
   }
   cancelar(){
-    this.router.navigate(['/listarPensamento'])
+    this.router.navigate(['/listarPensamentos'])
     
   }
 }

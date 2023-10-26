@@ -10,6 +10,7 @@ import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pens
 import { PensamentoCardComponent } from './componentes/pensamentos/pensamento-card/pensamento-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DeletePensamentosComponent } from './componentes/pensamentos/delete-pensamentos/delete-pensamentos.component';
+import { EditarPensamentosComponent } from './componentes/pensamentos/editar-pensamentos/editar-pensamentos.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DeletePensamentosComponent } from './componentes/pensamentos/delete-pen
     PensamentosComponent,
     ListarPensamentoComponent,
     PensamentoCardComponent,
-    DeletePensamentosComponent
+    DeletePensamentosComponent,
+    EditarPensamentosComponent
   ],
   imports: [
     BrowserModule,
