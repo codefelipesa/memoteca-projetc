@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pensamento/listar-pensamento.component';
 import { PensamentoCardComponent } from './componentes/pensamentos/pensamento-card/pensamento-card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DeletePensamentosComponent } from './componentes/pensamentos/delete-pensamentos/delete-pensamentos.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     RodapeComponent,
     PensamentosComponent,
     ListarPensamentoComponent,
-    PensamentoCardComponent
+    PensamentoCardComponent,
+    DeletePensamentosComponent
   ],
   imports: [
     BrowserModule,

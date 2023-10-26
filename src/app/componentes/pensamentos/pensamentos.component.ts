@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { Pensamento } from './interface-pensamento';
+import { ServicePensamentoService } from './service-pensamento.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pensamentos',
@@ -9,14 +11,22 @@ import { Pensamento } from './interface-pensamento';
 export class PensamentosComponent {
 
   pensamento: Pensamento = {
-    id: 1,
-    conteudo :'Eu Te Amo Meu Amor',
-    autoria: 'Namorado da Kakau',
-    modelo : '' 
+    conteudo :'',
+    autoria: '',
+    modelo : 'modelo1' 
   }
   
+  constructor(private service : ServicePensamentoService, private router: Router){}
 
-  criarPensamento(){}
+  criarPensamento(){
+    this.service.criar(this.pensamento).subscribe(()=>{
+      this.router.navigate(['/listarPensamentos'])
+    })
+  }
+
+  cancelar(){
+    this.router.navigate(['/listarPensamentos'])
+  }
 
 
 }
