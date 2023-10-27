@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { PensamentosComponent } from './componentes/pensamentos/pensamentos.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pensamento/listar-pensamento.component';
 import { PensamentoCardComponent } from './componentes/pensamentos/pensamento-card/pensamento-card.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -27,7 +27,8 @@ import { EditarPensamentosComponent } from './componentes/pensamentos/editar-pen
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
