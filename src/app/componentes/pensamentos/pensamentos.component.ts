@@ -11,7 +11,7 @@ import { FormBuilder,FormGroup, Validators } from '@angular/forms';
 })
 export class PensamentosComponent implements OnInit {
   
-  formulario! :FormGroup;
+  formulario! :FormGroup; // Atributo Obrigatório
 
   constructor(private service : ServicePensamentoService, 
     private router: Router,
@@ -23,14 +23,18 @@ export class PensamentosComponent implements OnInit {
         conteudo: ['',Validators.compose(
           [
             Validators.required,
-            Validators.minLength(6)
+            Validators.pattern(/(.|\s)*\S(.|\s)*/)
           ])],
-        autoria: ['',[Validators.required]],
+        autoria: ['',Validators.compose([
+          Validators.required,
+          Validators.minLength(4)
+        ])],
         modelo: ['modelo1',[Validators.required]]
       })
     }
 
   criarPensamento(){
+    console.log(this.formulario.get('autoria')?.errors)
     if(this.formulario.valid){
     this.service.criar(this.formulario.value).subscribe(()=>{
       this.router.navigate(['/listarPensamentos'])
