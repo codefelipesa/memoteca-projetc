@@ -45,5 +45,13 @@ export class PensamentosComponent implements OnInit {
     this.router.navigate(['/listarPensamentos'])
   }
 
+  habilitarBotao() : string {
+    if(this.formulario.valid){
+      return 'botao'
+    } else {
+      return 'botao__disabled'
+    }
+  }
+
 
 }

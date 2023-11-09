@@ -1,7 +1,8 @@
 import { Component,OnInit } from '@angular/core';
-import { Pensamento } from '../interface-pensamento';
 import { ServicePensamentoService } from '../service-pensamento.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { FormBuilder,FormGroup, Validators } from '@angular/forms';
+
 
 
 
@@ -11,29 +12,38 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./editar-pensamentos.component.css']
 })
 export class EditarPensamentosComponent implements OnInit{
-  pensamento: Pensamento = {
-    id: 0,
-    conteudo :'',
-    autoria: '',
-    modelo : '' 
-  }
+  formulario! : FormGroup;
+  
   constructor(
     private service : ServicePensamentoService, // Para fazer a comunicação com o serviço
     private router :  Router, // Para realizar o redirecionamento
-    private route : ActivatedRoute // Fornece informações sobre os paramêtros, rotas e caminhos sobre os cards 
+    private route : ActivatedRoute, // Fornece informações sobre os paramêtros, rotas e caminhos sobre os cards
+    private formBuilder : FormBuilder
 
   ){}
   
   ngOnInit():void {
     const id = this.route.snapshot.paramMap.get('id')
     this.service.buscarPorId(parseInt(id!)).subscribe((pensamento)=>{
-      this.pensamento = pensamento
+      this.formulario = this.formBuilder.group({
+        id: [pensamento.id],
+        conteudo: [pensamento.conteudo, Validators.compose([
+          Validators.required,
+          Validators.pattern(/(.|\s)*\S(.|\s)*/)
+
+        ])],
+        autoria: [pensamento.autoria, Validators.compose([
+          Validators.required,
+          Validators.minLength(3)
+        ])],
+        modelo: [pensamento.modelo]
+      })
     })
   }
 
 
   editarPensamento(){
-    this.service.editar(this.pensamento).subscribe(()=>{
+    this.service.editar(this.formulario.value).subscribe(()=>{
       this.router.navigate(['/listarPensamentos'])
     })
   }
@@ -42,5 +52,13 @@ export class EditarPensamentosComponent implements OnInit{
     
   }
 
+
+  habilitarBotao() : string {
+    if(this.formulario.valid){
+      return 'botao'
+    } else {
+      return 'botao__disabled'
+    }
+  }
 
 }
